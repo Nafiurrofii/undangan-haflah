@@ -4,6 +4,7 @@ import { initReveal } from '../features/reveal.js';
 import { initParticles } from '../features/particles.js';
 import { initParallax } from '../features/parallax.js';
 import { initCountdown } from '../features/countdown.js';
+import { initRSVP } from '../features/rsvp.js';
 
 export function initializeApp() {
   document.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +12,7 @@ export function initializeApp() {
     initParticles();
     initParallax();
     initCountdown();
+    initRSVP();
     // initReveal is also called via DOMContentLoaded as fallback
     initReveal(); 
   });
