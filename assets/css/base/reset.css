@@ -1,0 +1,30 @@
+/* ── Root & Base ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--cream-light);
+  font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ── Noise Texture Overlay ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Page Background ── */
+.page-bg {
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 10%, rgba(122,158,126,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 85% 80%, rgba(45,90,61,0.12) 0%, transparent 55%),
+    radial-gradient(ellipse 100% 80% at 50% 50%, rgba(201,168,76,0.04) 0%, transparent 70%),
+    linear-gradient(160deg, #FAF7F0 0%, #F0EAD8 40%, #EDE5D5 100%);
+}

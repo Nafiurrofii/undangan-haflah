@@ -1,0 +1,32 @@
+/* ── Gold Divider ── */
+.gold-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.gold-divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* ── Decorative Islamic Pattern band ── */
+.pattern-band {
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, var(--gold) 20%, var(--gold-light) 50%, var(--gold) 80%, transparent 100%);
+  position: relative;
+}
+.pattern-band::before {
+  content: '✦';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--gold);
+  font-size: 0.7rem;
+  background: var(--cream-light);
+  padding: 0 0.4rem;
+}

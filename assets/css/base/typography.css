@@ -1,0 +1,4 @@
+.glow-title {
+  text-shadow: 0 0 24px rgba(201,168,76,0.3), 0 2px 8px rgba(45,90,61,0.15);
+  animation: glowPulse 3s ease-in-out infinite;
+}

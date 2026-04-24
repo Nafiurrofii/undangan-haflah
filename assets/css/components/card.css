@@ -1,0 +1,38 @@
+/* ── Guest Card ── */
+.guest-card {
+  position: relative;
+  background: rgba(255,255,255,0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(201,168,76,0.35);
+  border-radius: 1.25rem;
+  padding: 1.25rem 2.5rem;
+  box-shadow:
+    0 8px 32px rgba(45,90,61,0.08),
+    0 2px 8px rgba(201,168,76,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+  min-width: min(280px, 85vw);
+  text-align: center;
+}
+.guest-card::before, .guest-card::after {
+  content: '❧';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+.guest-card::before { left: 0.75rem; }
+.guest-card::after  { right: 0.75rem; transform: translateY(-50%) scaleX(-1); }
+
+/* ── Info Card ── */
+.info-card {
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201,168,76,0.25);
+  border-radius: 1.5rem;
+  padding: 2rem 1.75rem;
+  box-shadow: 0 8px 32px rgba(45,90,61,0.07), inset 0 1px 0 rgba(255,255,255,0.7);
+}

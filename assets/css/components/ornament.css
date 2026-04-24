@@ -1,0 +1,58 @@
+/* ── Corner Ornaments — SVG Leaves ── */
+.corner-ornament {
+  position: absolute;
+  pointer-events: none;
+  z-index: 2;
+}
+.corner-tl { top: 0; left: 0; width: clamp(130px,28vw,240px); transform-origin: top left; }
+.corner-tr { top: 0; right: 0; width: clamp(130px,28vw,240px); transform: scaleX(-1); transform-origin: top right; }
+.corner-bl { bottom: 0; left: 0; width: clamp(100px,22vw,180px); transform: scaleY(-1); transform-origin: bottom left; }
+.corner-br { bottom: 0; right: 0; width: clamp(100px,22vw,180px); transform: scale(-1); transform-origin: bottom right; }
+
+/* ── Blur Circles ── */
+.blur-circle {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Islamic Geometric Ornament ── */
+.geo-ornament {
+  position: absolute;
+  width: clamp(180px, 40vw, 360px);
+  height: clamp(180px, 40vw, 360px);
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.08);
+  pointer-events: none;
+}
+.geo-ornament::before {
+  content: '';
+  position: absolute;
+  inset: 15px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.06);
+}
+.geo-ornament::after {
+  content: '';
+  position: absolute;
+  inset: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.04);
+}
+
+/* ── Logo Circle ── */
+.logo-circle {
+  width: clamp(72px, 15vw, 90px);
+  height: clamp(72px, 15vw, 90px);
+  border-radius: 50%;
+  border: 1.5px solid var(--gold);
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 24px rgba(201,168,76,0.18), inset 0 1px 0 rgba(255,255,255,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
