@@ -1,5 +1,5 @@
 /* ── Scroll Button ── */
-.scroll-btn {
+.hero-scroll-btn {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -14,7 +14,7 @@
   transition: all 0.3s ease;
   animation: float 3s ease-in-out infinite;
 }
-.scroll-btn:hover {
+.hero-scroll-btn:hover {
   background: var(--emerald);
   box-shadow: 0 8px 28px rgba(45,90,61,0.4), 0 0 0 6px rgba(201,168,76,0.18);
   transform: scale(1.08);
