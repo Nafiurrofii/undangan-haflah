@@ -256,7 +256,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-1 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/RA.jpeg" alt="Raudhatul Athfal" loading="lazy"
+          <img src="assets/images/RA.png" alt="Raudhatul Athfal" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -292,7 +292,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-3 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/MI.jpg" alt="Madrasah Ibtidaiyah" loading="lazy"
+          <img src="assets/images/MI.png" alt="Madrasah Ibtidaiyah" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -310,7 +310,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-4 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/SDIT.jpg" alt="SD Islam Terpadu" loading="lazy"
+          <img src="assets/images/SDIT.png" alt="SD Islam Terpadu" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -328,7 +328,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-5 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/SMP%20BERJAN.jpeg" alt="SMP Berjan" loading="lazy"
+          <img src="assets/images/SMP%20BERJAN.png" alt="SMP Berjan" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -346,7 +346,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-6 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/SMP%20PEKUTAN.jpeg" alt="SMP Pekutan" loading="lazy"
+          <img src="assets/images/SMP%20PEKUTAN.png" alt="SMP Pekutan" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -364,7 +364,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-7 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/SMK.jpg" alt="SMK" loading="lazy"
+          <img src="assets/images/SMK.png" alt="SMK" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -382,7 +382,7 @@
         <div
           class="gallery-item group relative overflow-hidden rounded-3xl aspect-[3/4] cursor-pointer reveal reveal-delay-8 bg-emerald-900/10 animate-pulse border border-gold/20 shadow-md"
           style="animation-duration: 2s;" onclick="openGalleryModal(this)">
-          <img src="assets/images/MA.jpeg" alt="Madrasah Aliyah" loading="lazy"
+          <img src="assets/images/MA.png" alt="Madrasah Aliyah" loading="lazy"
             class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 opacity-0"
             onload="this.classList.remove('opacity-0'); this.parentElement.classList.remove('animate-pulse');">
           <div
@@ -1719,226 +1719,389 @@
 
     
   <!-- ══════════════════════════════════════ -->
+    <!-- ══════════════════════════════════════ -->
+    
+  <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL TK                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-tk" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-tk" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-tk/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL RA                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-ra" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-ra" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-ra/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL SD                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-sd" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-sd" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-sd/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL MI                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-mi" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-mi" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-mi/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL SMP BERJAN                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-smp-berjan" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-smp-berjan" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-smp-berjan/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL SMP PEKUTAN                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-smp-pekutan" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-smp-pekutan" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-smp-pekutan/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL SMK                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-smk" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-smk" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-smk/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════ -->
   <!--  DOCS MODAL MA                         -->
   <!-- ══════════════════════════════════════ -->
-  <div id="docs-modal-ma" class="docs-modal fixed inset-0 z-[10000] bg-black/90 backdrop-blur-sm hidden flex-col items-center justify-center opacity-0 transition-opacity duration-500 p-2 sm:p-4">
+  <div id="docs-modal-ma" class="docs-modal fixed inset-0 z-[10000] bg-black/95 backdrop-blur-md hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300 font-sans">
     <!-- Close background -->
     <div class="absolute inset-0 docs-modal-close-bg cursor-pointer"></div>
 
     <!-- Close Button (Floating Top Right) -->
     <button class="docs-modal-close-btn absolute top-3 right-3 sm:top-5 sm:right-5 z-20 text-white/60 hover:text-white transition-colors p-2 cursor-pointer" aria-label="Tutup">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
     </button>
 
-    <!-- Modal Container -->
-    <div class="docs-modal-content relative z-10 w-full max-w-4xl h-[90vh] md:h-[95vh] mt-6 sm:mt-0 flex flex-col overflow-hidden transform scale-95 opacity-0 transition-all duration-500 rounded-xl bg-black">
-      <!-- Loading State -->
-      <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#1e1e1e] z-10 gap-4">
-        <div class="w-10 h-10 border-2 border-white/20 border-t-emerald-500 rounded-full animate-spin"></div>
-        <p class="font-raleway text-white/70 text-sm">Memuat dokumen...</p>
+    <div class="docs-modal-content relative z-10 w-[96vw] sm:w-[90vw] max-w-4xl flex flex-col h-[90vh] mt-8 transform scale-95 opacity-0 transition-all duration-300">
+      
+      <!-- Fake In-App Browser Header / Drive Viewer -->
+      <div class="w-full flex justify-center mb-2 sm:mb-3">
+        <div class="w-full bg-[#2a2a2a] rounded-xl sm:rounded-2xl flex items-center px-4 py-2 sm:py-3 shadow-lg border border-white/5">
+          <div class="flex-1 truncate text-white/70 text-xs sm:text-sm tracking-wide">
+            https://drive.google.com/file/d/dokumen-wisuda-ma/view
+          </div>
+          <div class="flex items-center gap-3 ml-3 pl-3 border-l border-white/10">
+            <button class="text-white/40 hover:text-white transition-colors" title="Muat ulang" onclick="const f=this.closest('.docs-modal-content').querySelector('iframe'); f.src=f.src;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.59-9.21l5.25 5.25"/></svg>
+            </button>
+            <a href="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview" target="_blank" class="text-white/40 hover:text-white transition-colors" title="Buka di tab baru">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+        </div>
       </div>
-      <iframe
-        src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
-        class="w-full h-full bg-white rounded-xl"
-        frameborder="0"
-        onload="this.previousElementSibling.style.display='none'">
-      </iframe>
+
+      <!-- Document Container -->
+      <div class="flex-1 w-full bg-[#f8f9fa] rounded-t-lg sm:rounded-xl overflow-hidden shadow-2xl relative">
+        <!-- Loading State -->
+        <div class="docs-loading absolute inset-0 flex flex-col items-center justify-center bg-[#f8f9fa] z-10 gap-3">
+          <div class="w-8 h-8 border-2 border-[#1a73e8]/20 border-t-[#1a73e8] rounded-full animate-spin"></div>
+          <p class="text-sm text-gray-500 font-medium tracking-wide">Memuat dokumen...</p>
+        </div>
+        <iframe
+          src="https://docs.google.com/document/d/1vbhJ81bWnf8nHmmRYZ4qH2QJwYhEWS4M/preview"
+          class="w-full h-full"
+          frameborder="0"
+          onload="this.previousElementSibling.style.display='none'">
+        </iframe>
+      </div>
     </div>
   </div>
 
