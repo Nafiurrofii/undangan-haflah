@@ -20,15 +20,6 @@
 <body class="page-bg">
 
   <!-- ══════════════════════════════════════ -->
-  <!--  ENTRANCE OVERLAY                      -->
-  <!-- ══════════════════════════════════════ -->
-  <!-- <div id="entrance-overlay">
-    <div class="text-center">
-      <div class="overlay-bismillah">بِسْمِ اللّٰهِ الرَّحْمَنِ الرَّحِيْم</div>
-    </div>
-  </div> -->
-
-  <!-- ══════════════════════════════════════ -->
   <!--  HERO SECTION                          -->
   <!-- ══════════════════════════════════════ -->
   <section class="hero-section" id="hero">
@@ -2905,7 +2896,19 @@
       </div>
     </div>
   </div>
+  <script>
+    // ── Dynamic Guest Name Logic ──
+    const params = new URLSearchParams(window.location.search);
+    let name = params.get("to");
 
+    if (name && name !== "") {
+      name = name.replace(/-/g, " ");
+      name = name.replace(/\b\w/g, c => c.toUpperCase());
+      document.getElementById("guest-name").textContent = name;
+    } else {
+      document.getElementById("guest-name").textContent = "Tamu Undangan";
+    }
+  </script>
 </body>
 
 </html>
