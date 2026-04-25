@@ -2910,6 +2910,26 @@
       document.getElementById("guest-name").textContent = "Tamu Undangan";
     }
   </script>
+
+  <!-- Audio & Floating Button -->
+  <audio id="backsound" loop preload="auto">
+    <source src="assets/audio/backsound.mp3" type="audio/mpeg">
+  </audio>
+  
+  <button id="audio-control" class="fixed bottom-6 right-6 z-[9999] w-12 h-12 rounded-full bg-emerald-700 border border-gold/30 text-gold shadow-[0_4px_15px_rgba(45,90,61,0.4)] flex items-center justify-center hover:scale-110 hover:shadow-[0_0_20px_rgba(201,168,76,0.6)] transition-all duration-300 group" aria-label="Putar Musik">
+    <!-- Icon 🔇 (default until played) -->
+    <svg id="icon-mute" class="w-5 h-5 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+      <line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="17" y1="14" x2="23" y2="8"></line>
+      <line stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="17" y1="8" x2="23" y2="14"></line>
+    </svg>
+    <!-- Icon 🔊 (hidden default) -->
+    <svg id="icon-play" class="w-5 h-5 hidden transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"></path>
+    </svg>
+  </button>
+
+  <script src="assets/js/features/audio.js"></script>
 </body>
 
 </html>
