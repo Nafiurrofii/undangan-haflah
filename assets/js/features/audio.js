@@ -7,9 +7,11 @@ document.addEventListener('DOMContentLoaded', () => {
     
     let hasInteracted = false;
     let fadeInterval = null;
+    let isFadingOut = false;
     
-    // Default low volume
+    // Default low volume & custom loop
     audio.volume = 0;
+    audio.loop = false; // We handle loop manually for smoothness
     const targetVolume = 0.3;
 
     // --- SCROLL LOCK MECHANISM ---
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function fadeInAudio() {
         if (fadeInterval) clearInterval(fadeInterval);
+        isFadingOut = false;
         
         let vol = audio.volume;
         
@@ -84,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fadeInAudio();
         } else {
             if (fadeInterval) clearInterval(fadeInterval);
+            isFadingOut = false;
             audio.pause();
             updateIcons();
         }
@@ -117,6 +121,38 @@ document.addEventListener('DOMContentLoaded', () => {
         heroScrollBtn.addEventListener('click', startExperience, { once: true });
     }
     
+    // Custom Smooth Loop
+    audio.addEventListener('timeupdate', () => {
+        if (!audio.duration) return;
+        
+        const timeRemaining = audio.duration - audio.currentTime;
+        // Start fading out 2 seconds before the end
+        if (timeRemaining <= 2 && timeRemaining > 0 && !isFadingOut && !audio.paused) {
+            isFadingOut = true;
+            if (fadeInterval) clearInterval(fadeInterval);
+            
+            let vol = audio.volume;
+            fadeInterval = setInterval(() => {
+                if (vol > 0) {
+                    vol -= 0.05;
+                    audio.volume = Math.max(0, vol);
+                }
+                
+                if (audio.volume === 0 || audio.currentTime >= audio.duration - 0.1) {
+                    clearInterval(fadeInterval);
+                    audio.currentTime = 0; // Reset to start
+                    fadeInAudio(); // Fade back in (will also play)
+                }
+            }, 100); // 100ms interval for smooth fade out
+        }
+    });
+
+    // Fallback if timeupdate misses the exact end
+    audio.addEventListener('ended', () => {
+        audio.currentTime = 0;
+        fadeInAudio();
+    });
+
     // Sync icons if audio stops naturally
     audio.addEventListener('pause', updateIcons);
     audio.addEventListener('play', updateIcons);
