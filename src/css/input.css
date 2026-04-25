@@ -1,3 +1,26 @@
+/* RESET */
+@import "../../assets/css/base/reset.css";
+
+/* VARIABLES */
+@import "../../assets/css/base/variables.css";
+
+/* TYPOGRAPHY */
+@import "../../assets/css/base/typography.css";
+
+/* COMPONENTS */
+@import "../../assets/css/components/button.css";
+@import "../../assets/css/components/card.css";
+@import "../../assets/css/components/divider.css";
+@import "../../assets/css/components/ornament.css";
+
+/* SECTIONS */
+@import "../../assets/css/sections/hero.css";
+@import "../../assets/css/sections/event.css";
+@import "../../assets/css/sections/gallery.css";
+@import "../../assets/css/sections/rundown.css";
+@import "../../assets/css/sections/countdown.css";
+
+/* TAILWIND */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
