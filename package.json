@@ -1,0 +1,28 @@
+{
+  "name": "wedding-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/css/input.css -o ./dist/style.css --watch",
+    "build": "tailwindcss -i ./src/css/input.css -o ./dist/style.css --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nafiurrofii/undangan-haflah.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nafiurrofii/undangan-haflah/issues"
+  },
+  "homepage": "https://github.com/Nafiurrofii/undangan-haflah#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^4.2.4"
+  }
+}
