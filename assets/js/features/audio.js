@@ -98,16 +98,44 @@ document.addEventListener('DOMContentLoaded', () => {
         audioControl.addEventListener('click', toggleAudio);
     }
 
+    // --- PREMIUM SMOOTH SCROLL ---
+    function premiumScrollTo(target, duration = 1200) {
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        let startTime = null;
+
+        // Easing Function: easeInOutQuart (Lebih natural dan cinematic)
+        function easeInOutQuart(t, b, c, d) {
+            t /= d / 2;
+            if (t < 1) return c / 2 * t * t * t * t + b;
+            t -= 2;
+            return -c / 2 * (t * t * t * t - 2) + b;
+        }
+
+        function animation(currentTime) {
+            if (startTime === null) startTime = currentTime;
+            const timeElapsed = currentTime - startTime;
+            const run = easeInOutQuart(timeElapsed, startPosition, distance, duration);
+            window.scrollTo(0, run);
+            if (timeElapsed < duration) {
+                requestAnimationFrame(animation);
+            } else {
+                window.scrollTo(0, targetPosition); // Ensure perfect alignment
+            }
+        }
+
+        requestAnimationFrame(animation);
+    }
+
     // Guided Interaction: Unlock scroll, smooth scroll, and play audio
     function startExperience() {
         unlockScroll();
         
         const nextSection = document.getElementById('galeri') || document.getElementById('detail');
         if (nextSection) {
-            nextSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            // Gunakan durasi sedikit lebih lama (1500ms) untuk efek elegan
+            premiumScrollTo(nextSection, 1500);
         }
 
         if (!hasInteracted && audio.paused) {
