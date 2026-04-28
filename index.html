@@ -2451,6 +2451,7 @@
       function openModal(modalId) {
         const m = document.getElementById(modalId);
         if (!m) return;
+        document.body.style.overflow = 'hidden'; // Lock scroll
         const mc = m.querySelector('.modal-content');
         m.classList.remove('hidden');
         m.classList.add('flex');
@@ -2462,6 +2463,7 @@
       }
 
       function closeAllModals() {
+        document.body.style.overflow = ''; // Unlock scroll
         allModals.forEach(m => {
           const mc = m.querySelector('.modal-content');
           m.classList.add('opacity-0');
@@ -2496,6 +2498,7 @@
     function openDocsModal(docsModalId) {
       const dm = document.getElementById(docsModalId);
       if (!dm) return;
+      document.body.style.overflow = 'hidden'; // Lock scroll
       const dmc = dm.querySelector('.docs-modal-content');
       dm.classList.remove('hidden');
       dm.classList.add('flex');
@@ -2507,6 +2510,7 @@
     }
 
     function closeAllDocModals() {
+      document.body.style.overflow = ''; // Unlock scroll
       document.querySelectorAll('.docs-modal').forEach(dm => {
         const dmc = dm.querySelector('.docs-modal-content');
         dm.classList.add('opacity-0');
@@ -2539,6 +2543,7 @@
       modalImg.src = img.src;
       modalCaption.innerText = title;
 
+      document.body.style.overflow = 'hidden'; // Lock scroll
       modal.classList.remove('hidden');
       modal.classList.add('flex');
 
@@ -2556,6 +2561,7 @@
       const modalImg = document.getElementById('modal-img');
       const modalCaption = document.getElementById('modal-caption');
 
+      document.body.style.overflow = ''; // Unlock scroll
       modal.classList.add('opacity-0');
       modalImg.classList.remove('scale-100');
       modalImg.classList.add('scale-95');
